@@ -39,7 +39,7 @@ const HeroSection = () => {
             View My Projects
           </Button>
           <Button variant="outline" size="lg" className="border-secondary-foreground/30 text-secondary-foreground hover:bg-secondary-foreground/10" asChild>
-            <a href="/resume.pdf" download className="bg-primary text-accent">
+            <a href="/resume.pdf" download className="bg-primary text-slate-50">
               <Download className="h-4 w-4 mr-2" />
               Download Resume
             </a>
