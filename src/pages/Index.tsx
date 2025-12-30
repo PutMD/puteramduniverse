@@ -2,8 +2,10 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
+import ExperienceSection from "@/components/ExperienceSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import SkillsSection from "@/components/SkillsSection";
+import EducationSection from "@/components/EducationSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
@@ -11,11 +13,16 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Portfolio | Creative Developer</title>
+        <title>Putera M. Danial | Programmer & Web Developer Portfolio</title>
         <meta 
           name="description" 
-          content="Professional portfolio showcasing web development projects, skills, and experience. Specializing in React, TypeScript, and modern web technologies." 
+          content="Motivated Computer Science graduate with expertise in C#, .NET, and web development. Explore my projects, skills, and work experience in software development." 
         />
+        <meta name="keywords" content="Putera M. Danial, programmer, web developer, C#, .NET, software engineer, Malaysia" />
+        <meta property="og:title" content="Putera M. Danial | Programmer & Web Developer Portfolio" />
+        <meta property="og:description" content="Motivated Computer Science graduate with expertise in C#, .NET, and web development." />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://puteramdanial.com" />
       </Helmet>
       
       <div className="min-h-screen bg-background">
@@ -23,8 +30,10 @@ const Index = () => {
         <main>
           <HeroSection />
           <AboutSection />
+          <ExperienceSection />
           <ProjectsSection />
           <SkillsSection />
+          <EducationSection />
           <ContactSection />
         </main>
         <Footer />

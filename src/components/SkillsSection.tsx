@@ -1,65 +1,93 @@
-const skills = [
-  { name: "React", level: 90 },
-  { name: "TypeScript", level: 85 },
-  { name: "JavaScript", level: 95 },
-  { name: "Node.js", level: 80 },
-  { name: "CSS/Tailwind", level: 90 },
-  { name: "PostgreSQL", level: 75 },
+import { Code, Wrench, Database, Brain } from "lucide-react";
+
+const skillCategories = [
+  {
+    title: "Programming Languages",
+    icon: Code,
+    skills: ["C#", "Python", "Java", "JavaScript", "SQL"],
+  },
+  {
+    title: "Frameworks & Technologies",
+    icon: Wrench,
+    skills: [".NET 8", "ASP.NET", "HTML", "CSS", "SDLC"],
+  },
+  {
+    title: "Tools",
+    icon: Database,
+    skills: ["Visual Studio 2022", "Git", "SQL Server Management Studio", "Cozyroc"],
+  },
+  {
+    title: "Databases",
+    icon: Database,
+    skills: ["SQL Server", "MySQL"],
+  },
 ];
 
-const tools = [
-  "Git & GitHub",
-  "VS Code",
-  "Figma",
-  "Docker",
-  "AWS",
-  "Vercel",
+const coreCompetencies = [
+  "Data Integration",
+  "Software Testing",
+  "Problem-Solving",
+  "Time Management",
+  "Documentation Accuracy",
+  "Analytical Thinking",
 ];
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="py-24 bg-background">
+    <section id="skills" className="py-24 bg-card">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <p className="text-primary font-medium mb-2">Explore My</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Skills</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Technical Skills</h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          {/* Technical Skills */}
-          <div>
-            <h3 className="text-xl font-semibold text-foreground mb-6">Technical Skills</h3>
-            <div className="space-y-6">
-              {skills.map((skill) => (
-                <div key={skill.name}>
-                  <div className="flex justify-between mb-2">
-                    <span className="text-foreground font-medium">{skill.name}</span>
-                    <span className="text-muted-foreground">{skill.level}%</span>
+        {/* Technical Skills Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-16">
+          {skillCategories.map((category, index) => {
+            const IconComponent = category.icon;
+            return (
+              <div
+                key={index}
+                className="bg-background p-6 rounded-lg border border-border hover:border-primary transition-colors"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-2 bg-primary/10 rounded-lg">
+                    <IconComponent className="h-5 w-5 text-primary" />
                   </div>
-                  <div className="h-2 bg-muted rounded-full overflow-hidden">
-                    <div
-                      className="h-full bg-primary rounded-full transition-all duration-1000"
-                      style={{ width: `${skill.level}%` }}
-                    />
-                  </div>
+                  <h3 className="font-semibold text-foreground">{category.title}</h3>
                 </div>
-              ))}
+                <div className="flex flex-wrap gap-2">
+                  {category.skills.map((skill, skillIndex) => (
+                    <span
+                      key={skillIndex}
+                      className="px-3 py-1 text-sm bg-muted text-foreground rounded-full"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Core Competencies */}
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-8">
+            <div className="flex items-center justify-center gap-3 mb-2">
+              <Brain className="h-6 w-6 text-primary" />
+              <h3 className="text-xl font-semibold text-foreground">Core Competencies</h3>
             </div>
           </div>
-
-          {/* Tools & Technologies */}
-          <div>
-            <h3 className="text-xl font-semibold text-foreground mb-6">Tools & Technologies</h3>
-            <div className="grid grid-cols-2 gap-4">
-              {tools.map((tool) => (
-                <div
-                  key={tool}
-                  className="bg-card p-4 rounded-lg border border-border text-center hover:border-primary transition-colors"
-                >
-                  <span className="text-foreground font-medium">{tool}</span>
-                </div>
-              ))}
-            </div>
+          <div className="flex flex-wrap justify-center gap-4">
+            {coreCompetencies.map((competency, index) => (
+              <div
+                key={index}
+                className="bg-background px-6 py-3 rounded-lg border border-border hover:border-primary transition-colors"
+              >
+                <span className="text-foreground font-medium">{competency}</span>
+              </div>
+            ))}
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { User, Briefcase, GraduationCap } from "lucide-react";
+import { User, Briefcase, GraduationCap, MapPin } from "lucide-react";
 
 const AboutSection = () => {
   return (
@@ -16,15 +16,15 @@ const AboutSection = () => {
               <User className="h-8 w-8 text-primary mb-4" />
               <h3 className="text-lg font-semibold text-card-foreground mb-2">Who I Am</h3>
               <p className="text-muted-foreground">
-                A creative developer with a passion for building intuitive and visually appealing web applications.
+                A motivated Computer Science graduate passionate about creating efficient software solutions and solving complex problems.
               </p>
             </div>
 
             <div className="bg-card p-6 rounded-lg border border-border hover:border-primary transition-colors group">
               <Briefcase className="h-8 w-8 text-primary mb-4" />
-              <h3 className="text-lg font-semibold text-card-foreground mb-2">Experience</h3>
+              <h3 className="text-lg font-semibold text-card-foreground mb-2">Current Role</h3>
               <p className="text-muted-foreground">
-                5+ years of professional experience working with modern web technologies and frameworks.
+                Programmer / Web Developer at Jabatan Perkhidmatan Awam, working with C#, .NET, and SQL Server.
               </p>
             </div>
 
@@ -32,7 +32,15 @@ const AboutSection = () => {
               <GraduationCap className="h-8 w-8 text-primary mb-4" />
               <h3 className="text-lg font-semibold text-card-foreground mb-2">Education</h3>
               <p className="text-muted-foreground">
-                Bachelor's degree in Computer Science with continuous learning in emerging technologies.
+                Bachelor of Computer Science (Hons) from UiTM Jasin, graduating September 2025.
+              </p>
+            </div>
+
+            <div className="bg-card p-6 rounded-lg border border-border hover:border-primary transition-colors group">
+              <MapPin className="h-8 w-8 text-primary mb-4" />
+              <h3 className="text-lg font-semibold text-card-foreground mb-2">Location</h3>
+              <p className="text-muted-foreground">
+                Based in Selangor, Malaysia
               </p>
             </div>
           </div>
@@ -40,17 +48,19 @@ const AboutSection = () => {
           {/* About Text */}
           <div>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              I'm a full-stack developer who loves turning ideas into reality. With expertise in 
-              React, TypeScript, and modern CSS frameworks, I create seamless user experiences 
-              that are both functional and beautiful.
+              I'm a detail-oriented developer with a strong foundation in software development and web technologies. 
+              My expertise spans across C#, .NET framework, and modern web development practices, allowing me to 
+              build robust and scalable applications.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              When I'm not coding, you can find me exploring new technologies, contributing to 
-              open-source projects, or sharing knowledge with the developer community.
+              Currently, I'm focused on application development, data integration, and database management at 
+              Jabatan Perkhidmatan Awam, where I've successfully reduced document processing errors by over 95% 
+              through efficient software solutions.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              I believe in writing clean, maintainable code and creating products that make 
-              a positive impact on people's lives.
+              I believe in continuous learning and staying updated with emerging technologies. My goal is to 
+              contribute to innovative software projects that make a positive impact and to grow as a versatile 
+              software engineer.
             </p>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { Mail, MapPin, Linkedin, Github, Twitter } from "lucide-react";
+import { Mail, MapPin, Linkedin, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -31,22 +31,25 @@ const ContactSection = () => {
           <div>
             <h3 className="text-xl font-semibold text-foreground mb-6">Let's Connect</h3>
             <p className="text-muted-foreground mb-8">
-              I'm always open to discussing new projects, creative ideas, or opportunities 
-              to be part of your vision.
+              I'm always open to discussing new projects, job opportunities, or ways to 
+              contribute to your team. Feel free to reach out!
             </p>
 
             <div className="space-y-4 mb-8">
-              <div className="flex items-center gap-4">
-                <div className="p-3 bg-primary/10 rounded-lg">
+              <a 
+                href="mailto:putmdanial1412@gmail.com"
+                className="flex items-center gap-4 group"
+              >
+                <div className="p-3 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
                   <Mail className="h-5 w-5 text-primary" />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Email</p>
-                  <a href="mailto:hello@example.com" className="text-foreground hover:text-primary transition-colors">
-                    hello@example.com
-                  </a>
+                  <p className="text-foreground group-hover:text-primary transition-colors">
+                    putmdanial1412@gmail.com
+                  </p>
                 </div>
-              </div>
+              </a>
 
               <div className="flex items-center gap-4">
                 <div className="p-3 bg-primary/10 rounded-lg">
@@ -54,7 +57,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Location</p>
-                  <p className="text-foreground">San Francisco, CA</p>
+                  <p className="text-foreground">Selangor, Malaysia</p>
                 </div>
               </div>
             </div>
@@ -62,22 +65,22 @@ const ContactSection = () => {
             {/* Social Links */}
             <div className="flex gap-4">
               <a
-                href="#"
+                href="http://www.linkedin.com/in/putera-muhammad-danial-090977314"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-3 bg-muted rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors"
+                aria-label="LinkedIn Profile"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://github.com/PutMD"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-3 bg-muted rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors"
+                aria-label="GitHub Profile"
               >
                 <Github className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="p-3 bg-muted rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors"
-              >
-                <Twitter className="h-5 w-5" />
               </a>
             </div>
           </div>
