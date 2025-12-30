@@ -1,25 +1,20 @@
 import { ArrowDown, Download, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
-
 const HeroSection = () => {
   const scrollToSection = (id: string) => {
     const element = document.querySelector(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({
+        behavior: "smooth"
+      });
     }
   };
-
-  return (
-    <section
-      id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
-    >
+  return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBg})` }}
-      >
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url(${heroBg})`
+    }}>
         <div className="absolute inset-0 bg-secondary/80" />
       </div>
 
@@ -40,29 +35,16 @@ const HeroSection = () => {
           analytical and problem-solving skills, eager to contribute to innovative software projects.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button 
-            size="lg"
-            onClick={() => scrollToSection("#projects")}
-          >
+          <Button size="lg" onClick={() => scrollToSection("#projects")}>
             View My Projects
           </Button>
-          <Button 
-            variant="outline"
-            size="lg"
-            className="border-secondary-foreground/30 text-secondary-foreground hover:bg-secondary-foreground/10"
-            asChild
-          >
-            <a href="/resume.pdf" download>
+          <Button variant="outline" size="lg" className="border-secondary-foreground/30 text-secondary-foreground hover:bg-secondary-foreground/10" asChild>
+            <a href="/resume.pdf" download className="bg-primary text-accent">
               <Download className="h-4 w-4 mr-2" />
               Download Resume
             </a>
           </Button>
-          <Button 
-            variant="outline"
-            size="lg"
-            className="border-secondary-foreground/30 text-secondary-foreground hover:bg-secondary-foreground/10"
-            onClick={() => scrollToSection("#contact")}
-          >
+          <Button variant="outline" size="lg" className="border-secondary-foreground/30 text-secondary-foreground hover:bg-secondary-foreground/10" onClick={() => scrollToSection("#contact")}>
             <Mail className="h-4 w-4 mr-2" />
             Contact Me
           </Button>
@@ -70,14 +52,9 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <button
-        onClick={() => scrollToSection("#about")}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-secondary-foreground/60 hover:text-primary transition-colors animate-bounce"
-      >
+      <button onClick={() => scrollToSection("#about")} className="absolute bottom-8 left-1/2 -translate-x-1/2 text-secondary-foreground/60 hover:text-primary transition-colors animate-bounce">
         <ArrowDown className="h-6 w-6" />
       </button>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
