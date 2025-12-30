@@ -1,8 +1,6 @@
 import { User, Briefcase, GraduationCap, MapPin } from "lucide-react";
-
 const AboutSection = () => {
-  return (
-    <section id="about" className="py-24 bg-background">
+  return <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <p className="text-primary font-medium mb-2">Get To Know</p>
@@ -23,7 +21,7 @@ const AboutSection = () => {
             <div className="bg-card p-6 rounded-lg border border-border hover:border-primary transition-colors group">
               <Briefcase className="h-8 w-8 text-primary mb-4" />
               <h3 className="text-lg font-semibold text-card-foreground mb-2">Current Role</h3>
-              <p className="text-muted-foreground">
+              <p className="text-primary">
                 Programmer / Web Developer at Jabatan Perkhidmatan Awam, working with C#, .NET, and SQL Server.
               </p>
             </div>
@@ -31,7 +29,7 @@ const AboutSection = () => {
             <div className="bg-card p-6 rounded-lg border border-border hover:border-primary transition-colors group">
               <GraduationCap className="h-8 w-8 text-primary mb-4" />
               <h3 className="text-lg font-semibold text-card-foreground mb-2">Education</h3>
-              <p className="text-muted-foreground">
+              <p className="text-primary">
                 Bachelor of Computer Science (Hons) from UiTM Jasin, graduating September 2025.
               </p>
             </div>
@@ -39,7 +37,7 @@ const AboutSection = () => {
             <div className="bg-card p-6 rounded-lg border border-border hover:border-primary transition-colors group">
               <MapPin className="h-8 w-8 text-primary mb-4" />
               <h3 className="text-lg font-semibold text-card-foreground mb-2">Location</h3>
-              <p className="text-muted-foreground">
+              <p className="text-primary">
                 Based in Selangor, Malaysia
               </p>
             </div>
@@ -47,17 +45,17 @@ const AboutSection = () => {
 
           {/* About Text */}
           <div>
-            <p className="text-muted-foreground leading-relaxed mb-6">
+            <p className="leading-relaxed mb-6 text-primary">
               I'm a detail-oriented developer with a strong foundation in software development and web technologies. 
               My expertise spans across C#, .NET framework, and modern web development practices, allowing me to 
               build robust and scalable applications.
             </p>
-            <p className="text-muted-foreground leading-relaxed mb-6">
+            <p className="leading-relaxed mb-6 text-primary">
               Currently, I'm focused on application development, data integration, and database management at 
               Jabatan Perkhidmatan Awam, where I've successfully reduced document processing errors by over 95% 
               through efficient software solutions.
             </p>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="leading-relaxed text-primary">
               I believe in continuous learning and staying updated with emerging technologies. My goal is to 
               contribute to innovative software projects that make a positive impact and to grow as a versatile 
               software engineer.
@@ -65,8 +63,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
