@@ -44,7 +44,7 @@ const HeroSection = () => {
               Download Resume
             </a>
           </Button>
-          <Button variant="outline" size="lg" className="border-secondary-foreground/30 text-secondary-foreground hover:bg-secondary-foreground/10" onClick={() => scrollToSection("#contact")}>
+          <Button size="lg" className="bg-foreground text-background hover:bg-foreground/90" onClick={() => scrollToSection("#contact")}>
             <Mail className="h-4 w-4 mr-2" />
             Contact Me
           </Button>
