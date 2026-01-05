@@ -10,7 +10,7 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
           {/* Info Cards */}
           <div className="grid gap-6">
-            <div className="bg-card p-6 rounded-lg border border-border hover:border-primary transition-colors group">
+            <div className="bg-card p-6 rounded-lg border border-border hover:border-primary transition-colors group shadow-sm">
               <User className="h-8 w-8 text-primary mb-4" />
               <h3 className="text-lg font-semibold text-card-foreground mb-2">Who I Am</h3>
               <p className="text-muted-foreground">
