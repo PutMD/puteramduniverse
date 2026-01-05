@@ -45,7 +45,7 @@ const HeroSection = () => {
             </a>
           </Button>
             <Button size="lg" onClick={() => scrollToSection("#contact")}>
-            View My Projects
+            Contact Me
           </Button>
         </div>
       </div>
