@@ -26,7 +26,7 @@ const AboutSection = () => {
               </p>
             </div>
 
-            <div className="bg-card p-6 rounded-lg border border-border hover:border-primary transition-colors group">
+            <div className="bg-card p-6 rounded-lg border border-border hover:border-primary transition-colors group shadow-sm">
               <GraduationCap className="h-8 w-8 text-primary mb-4" />
               <h3 className="text-lg font-semibold text-card-foreground mb-2">Education</h3>
               <p className="text-primary">
