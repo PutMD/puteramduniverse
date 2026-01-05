@@ -15,7 +15,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
       backgroundImage: `url(${heroBg})`
     }}>
-        <div className="absolute inset-0 bg-rose-400" />
+        <div className="absolute inset-0 bg-primary-foreground" />
       </div>
 
       {/* Content */}
@@ -43,6 +43,10 @@ const HeroSection = () => {
               <Download className="h-4 w-4 mr-2" />
               Download Resume
             </a>
+          </Button>
+          <Button size="lg" className="bg-foreground text-background hover:bg-foreground/90" onClick={() => scrollToSection("#contact")}>
+            <Mail className="h-4 w-4 mr-2" />
+            Contact Me
           </Button>
         </div>
       </div>
