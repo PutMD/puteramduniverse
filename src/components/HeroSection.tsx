@@ -44,6 +44,9 @@ const HeroSection = () => {
               Download Resume
             </a>
           </Button>
+            <Button size="lg" onClick={() => scrollToSection("#contact")}>
+            View My Projects
+          </Button>
         </div>
       </div>
 
