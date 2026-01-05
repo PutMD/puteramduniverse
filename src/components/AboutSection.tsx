@@ -1,7 +1,7 @@
 import { User, Briefcase, GraduationCap, MapPin } from "lucide-react";
 const AboutSection = () => {
   return <section id="about" className="py-24 bg-background">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 bg-rose-400">
         <div className="text-center mb-16">
           <p className="text-primary font-medium mb-2">Get To Know</p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">About Me</h2>
