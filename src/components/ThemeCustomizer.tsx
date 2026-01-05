@@ -37,15 +37,13 @@ const ThemeCustomizer = () => {
     const root = document.documentElement;
     
     if (hue === 0 && saturation === 0) {
-      // Reset to default black/white theme
-      root.style.setProperty("--primary", "0 0% 0%");
-      root.style.setProperty("--primary-foreground", "0 0% 100%");
-      root.style.setProperty("--ring", "0 0% 0%");
+      // Reset to default white background
+      root.style.setProperty("--background", "0 0% 100%");
+      root.style.setProperty("--foreground", "0 0% 0%");
     } else {
-      // Apply custom color
-      root.style.setProperty("--primary", `${hue} ${saturation}% 45%`);
-      root.style.setProperty("--primary-foreground", "0 0% 100%");
-      root.style.setProperty("--ring", `${hue} ${saturation}% 45%`);
+      // Apply custom background color
+      root.style.setProperty("--background", `${hue} ${saturation}% 90%`);
+      root.style.setProperty("--foreground", `${hue} ${saturation}% 10%`);
     }
   };
 
@@ -119,7 +117,7 @@ const ThemeCustomizer = () => {
       </PopoverTrigger>
       <PopoverContent className="w-64 p-4" align="end" side="top">
         <div className="space-y-4">
-          <h4 className="font-medium text-foreground">Theme Color</h4>
+          <h4 className="font-medium text-foreground">Background Color</h4>
           
           {/* Preset Colors */}
           <div className="grid grid-cols-4 gap-2">
