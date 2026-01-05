@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import ThemeCustomizer from "@/components/ThemeCustomizer";
 import AboutSection from "@/components/AboutSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import ProjectsSection from "@/components/ProjectsSection";
@@ -37,6 +38,7 @@ const Index = () => {
           <ContactSection />
         </main>
         <Footer />
+        <ThemeCustomizer />
       </div>
     </>
   );
