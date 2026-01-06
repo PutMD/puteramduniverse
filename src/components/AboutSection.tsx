@@ -1,33 +1,23 @@
 import { User, Briefcase, GraduationCap, MapPin } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 
 const AboutSection = () => {
   const infoCards = [
     {
-      id: "who-i-am",
       icon: User,
       title: "Who I Am",
       content: "A motivated Computer Science graduate passionate about creating efficient software solutions and solving complex problems."
     },
     {
-      id: "current-role",
       icon: Briefcase,
       title: "Current Role",
       content: "Programmer / Web Developer at Jabatan Perkhidmatan Awam, working with C#, .NET, and SQL Server."
     },
     {
-      id: "education",
       icon: GraduationCap,
       title: "Education",
       content: "Bachelor of Computer Science (Hons) from UiTM Jasin, graduating September 2025."
     },
     {
-      id: "location",
       icon: MapPin,
       title: "Location",
       content: "Based in Selangor, Malaysia"
@@ -38,52 +28,59 @@ const AboutSection = () => {
     <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="text-primary font-medium mb-2 my-0 text-xl">Get To Know</p>
-          <h2 className="text-3xl font-bold text-foreground md:text-5xl">About Me</h2>
+          <p className="text-primary font-medium mb-2 text-lg">Get To Know</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground">About Me</h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
-          {/* Info Cards - Collapsible */}
-          <Accordion type="single" collapsible className="w-full space-y-4">
-            {infoCards.map((card) => {
+        <div className="grid lg:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
+          {/* Info Cards - Always visible */}
+          <div className="grid sm:grid-cols-2 gap-4">
+            {infoCards.map((card, index) => {
               const IconComponent = card.icon;
               return (
-                <AccordionItem
-                  key={card.id}
-                  value={card.id}
-                  className="bg-card rounded-lg border border-border hover:border-primary transition-colors shadow-sm px-6"
+                <div
+                  key={index}
+                  className="bg-card p-5 rounded-lg border border-border hover:border-primary transition-colors"
                 >
-                  <AccordionTrigger className="hover:no-underline py-4">
-                    <div className="flex items-center gap-4">
-                      <IconComponent className="h-6 w-6 text-primary" />
-                      <h3 className="text-lg font-semibold text-card-foreground">{card.title}</h3>
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="p-2 bg-primary/10 rounded-lg">
+                      <IconComponent className="h-5 w-5 text-primary" />
                     </div>
-                  </AccordionTrigger>
-                  <AccordionContent className="pb-4">
-                    <p className="text-muted-foreground pl-10">{card.content}</p>
-                  </AccordionContent>
-                </AccordionItem>
+                    <h3 className="font-semibold text-foreground">{card.title}</h3>
+                  </div>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{card.content}</p>
+                </div>
               );
             })}
-          </Accordion>
+          </div>
 
           {/* About Text */}
-          <div>
-            <p className="leading-relaxed mb-6 text-muted-foreground">
+          <div className="space-y-5">
+            <p className="leading-relaxed text-muted-foreground">
               I'm a detail-oriented developer with a strong foundation in software development and web technologies. 
-              My expertise spans across C#, .NET framework, and modern web development practices, allowing me to 
-              build robust and scalable applications.
+              My expertise spans across <span className="text-foreground font-medium">C#, .NET framework, and modern web development</span> practices, 
+              allowing me to build robust and scalable applications.
             </p>
-            <p className="leading-relaxed mb-6 text-muted-foreground">
-              Currently, I'm focused on application development, data integration, and database management at 
-              Jabatan Perkhidmatan Awam, where I've successfully reduced document processing errors by over 95% 
-              through efficient software solutions.
+            <p className="leading-relaxed text-muted-foreground">
+              At Jabatan Perkhidmatan Awam, I've successfully <span className="text-foreground font-medium">reduced document processing errors by over 95%</span> through 
+              efficient software solutions. I work daily with .NET 8, SQL Server, and enterprise-level data integration tools.
             </p>
             <p className="leading-relaxed text-muted-foreground">
               I believe in continuous learning and staying updated with emerging technologies. My goal is to 
-              contribute to innovative software projects that make a positive impact and to grow as a versatile 
-              software engineer.
+              contribute to innovative software projects and grow as a versatile software engineer.
             </p>
+            
+            {/* Quick highlights */}
+            <div className="pt-4 border-t border-border">
+              <p className="text-sm font-medium text-foreground mb-3">Key Strengths:</p>
+              <div className="flex flex-wrap gap-2">
+                {["Problem Solving", "Clean Code", "Fast Learner", "Team Player"].map((strength, i) => (
+                  <span key={i} className="px-3 py-1 text-sm bg-primary/10 text-primary rounded-full">
+                    {strength}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>

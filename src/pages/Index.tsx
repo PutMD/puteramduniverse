@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import AchievementsSection from "@/components/AchievementsSection";
 import ThemeCustomizer from "@/components/ThemeCustomizer";
 import AboutSection from "@/components/AboutSection";
 import ExperienceSection from "@/components/ExperienceSection";
@@ -9,27 +10,29 @@ import SkillsSection from "@/components/SkillsSection";
 import EducationSection from "@/components/EducationSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import StickyCTA from "@/components/StickyCTA";
 
 const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Putera M. Danial | Programmer & Web Developer Portfolio</title>
+        <title>Putera M. Danial | Software Developer - C# & .NET Specialist</title>
         <meta 
           name="description" 
-          content="Motivated Computer Science graduate with expertise in C#, .NET, and web development. Explore my projects, skills, and work experience in software development." 
+          content="Software Developer specializing in C#, .NET, and SQL Server. Reduced document processing errors by 95%. View my portfolio, projects, and download my resume." 
         />
-        <meta name="keywords" content="Putera M. Danial, programmer, web developer, C#, .NET, software engineer, Malaysia" />
-        <meta property="og:title" content="Putera M. Danial | Programmer & Web Developer Portfolio" />
-        <meta property="og:description" content="Motivated Computer Science graduate with expertise in C#, .NET, and web development." />
+        <meta name="keywords" content="Putera M. Danial, software developer, C#, .NET developer, SQL Server, web developer, Malaysia, hire developer" />
+        <meta property="og:title" content="Putera M. Danial | Software Developer - C# & .NET Specialist" />
+        <meta property="og:description" content="Software Developer who builds reliable systems. Reduced errors by 95%. View portfolio and download resume." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://puteramdanial.com" />
       </Helmet>
       
       <div className="min-h-screen bg-background">
         <Navbar />
-        <main>
+        <main className="pb-20">
           <HeroSection />
+          <AchievementsSection />
           <AboutSection />
           <ExperienceSection />
           <ProjectsSection />
@@ -39,6 +42,7 @@ const Index = () => {
         </main>
         <Footer />
         <ThemeCustomizer />
+        <StickyCTA />
       </div>
     </>
   );
