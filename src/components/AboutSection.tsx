@@ -5,22 +5,22 @@ const AboutSection = () => {
     {
       icon: User,
       title: "Who I Am",
-      content: "A motivated Computer Science graduate passionate about creating efficient software solutions and solving complex problems."
+      content: "A results-driven Software Engineer and Web Developer with a Computer Science background and hands-on enterprise development experience."
     },
     {
       icon: Briefcase,
       title: "Current Role",
-      content: "Programmer / Web Developer at Jabatan Perkhidmatan Awam, working with C#, .NET, and SQL Server."
+      content: "Personnel MySTEP at Jabatan Perkhidmatan Awam, building enterprise backend solutions with C#, .NET 8, and SQL Server."
     },
     {
       icon: GraduationCap,
       title: "Education",
-      content: "Bachelor of Computer Science (Hons) from UiTM Jasin, graduating September 2025."
+      content: "Bachelor of Computer Science (Hons) from UiTM Jasin, graduated September 2025."
     },
     {
       icon: MapPin,
       title: "Location",
-      content: "Based in Selangor, Malaysia"
+      content: "Based in Bandar Saujana Putra, Selangor, Malaysia"
     }
   ];
 
@@ -57,24 +57,23 @@ const AboutSection = () => {
           {/* About Text */}
           <div className="space-y-5">
             <p className="leading-relaxed text-muted-foreground">
-              I'm a detail-oriented developer with a strong foundation in software development and web technologies. 
-              My expertise spans across <span className="text-foreground font-medium">C#, .NET framework, and modern web development</span> practices, 
-              allowing me to build robust and scalable applications.
+              I'm a results-driven Software Engineer and Web Developer with hands-on experience building enterprise solutions using
+              <span className="text-foreground font-medium"> C#, .NET 8, ASP.NET Core, and SQL Server</span>.
             </p>
             <p className="leading-relaxed text-muted-foreground">
-              At Jabatan Perkhidmatan Awam, I've successfully <span className="text-foreground font-medium">reduced document processing errors by over 95%</span> through 
-              efficient software solutions. I work daily with .NET 8, SQL Server, and enterprise-level data integration tools.
+              I architect RESTful APIs, deliver high-accuracy data integration pipelines, and optimize web frontend performance.
+              At Jabatan Perkhidmatan Awam, I <span className="text-foreground font-medium">reduced document processing errors by over 95%</span> while streamlining departmental workflows.
             </p>
             <p className="leading-relaxed text-muted-foreground">
-              I believe in continuous learning and staying updated with emerging technologies. My goal is to 
-              contribute to innovative software projects and grow as a versatile software engineer.
+              I apply Agile methodologies and Git workflows to deliver clean, reliable, and scalable software,
+              supported by precise documentation and accurate development estimates.
             </p>
             
             {/* Quick highlights */}
             <div className="pt-4 border-t border-border">
               <p className="text-sm font-medium text-foreground mb-3">Key Strengths:</p>
               <div className="flex flex-wrap gap-2">
-                {["Problem Solving", "Clean Code", "Fast Learner", "Team Player"].map((strength, i) => (
+                {["RESTful APIs", "Data Integration", "Agile & Git", "Clean, Scalable Code"].map((strength, i) => (
                   <span key={i} className="px-3 py-1 text-sm bg-primary/10 text-primary rounded-full">
                     {strength}
                   </span>

@@ -1,5 +1,6 @@
 import { Download, Calendar, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import resumeAsset from "@/assets/putera-m-danial-resume.pdf.asset.json";
 
 const StickyCTA = () => {
   const scrollToContact = () => {
@@ -18,7 +19,7 @@ const StickyCTA = () => {
         
         <div className="flex items-center gap-2 sm:gap-3">
           <Button size="sm" asChild>
-            <a href="/resume.pdf" download>
+            <a href={resumeAsset.url} download="Putera_M_Danial_Resume.pdf">
               <Download className="h-4 w-4 mr-2" />
               Resume
             </a>

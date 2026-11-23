@@ -1,29 +1,29 @@
-import { TrendingDown, Clock, Users, Award } from "lucide-react";
+import { TrendingDown, Clock, Database, Award } from "lucide-react";
 
 const achievements = [
   {
     icon: TrendingDown,
-    metric: "95%",
+    metric: "95%+",
     label: "Error Reduction",
-    description: "Reduced document processing errors through efficient software solutions",
+    description: "Reduced document processing errors through streamlined validation algorithms",
   },
   {
     icon: Clock,
     metric: "30%",
     label: "Faster Resolution",
-    description: "Improved IT request resolution time at previous role",
+    description: "Reduced IT request resolution time through cross-functional collaboration",
   },
   {
-    icon: Users,
-    metric: "500+",
-    label: "Documents Processed",
-    description: "Handled through automated data integration systems",
+    icon: Database,
+    metric: "ETL",
+    label: "Data Integration",
+    description: "Built high-accuracy migration workflows across legacy systems with SQL Server and Cozyroc",
   },
   {
     icon: Award,
     metric: "2025",
     label: "BSc Computer Science",
-    description: "UiTM Jasin - Expected graduation September 2025",
+    description: "Graduated from UiTM Jasin in September 2025",
   },
 ];
 

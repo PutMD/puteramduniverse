@@ -57,7 +57,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Location</p>
-                  <p className="text-foreground">Selangor, Malaysia</p>
+                  <p className="text-foreground">Bandar Saujana Putra, Selangor, Malaysia</p>
                 </div>
               </div>
             </div>

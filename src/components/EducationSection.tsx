@@ -5,7 +5,7 @@ const education = [
     degree: "Bachelor of Computer Science (Hons)",
     institution: "Universiti Teknologi MARA (UiTM), Jasin",
     graduation: "September 2025",
-    current: true,
+    current: false,
   },
   {
     degree: "Module 3 Computer Science",
@@ -60,7 +60,7 @@ const EducationSection = () => {
                   </div>
                   <div className="flex items-center gap-2 text-muted-foreground text-sm">
                     <Calendar className="h-4 w-4" />
-                    <span>Graduation: {edu.graduation}</span>
+                    <span>Graduated: {edu.graduation}</span>
                   </div>
                 </div>
               ))}

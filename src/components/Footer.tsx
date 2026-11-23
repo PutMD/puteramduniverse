@@ -12,7 +12,7 @@ const Footer = () => {
               Putera M. Danial
             </p>
             <p className="text-secondary-foreground/70 text-sm">
-              Programmer / Web Developer
+              Software Engineer | .NET & Full-Stack Web Developer
             </p>
           </div>
 

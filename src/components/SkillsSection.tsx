@@ -1,35 +1,35 @@
-import { Code, Wrench, Database, Brain } from "lucide-react";
+import { Code, Wrench, Database, Brain, GitBranch } from "lucide-react";
 
 const skillCategories = [
   {
-    title: "Programming Languages",
+    title: "Languages & Backend",
     icon: Code,
-    skills: ["C#", "Python", "Java", "JavaScript", "SQL"],
+    skills: ["C#", ".NET 8", "ASP.NET Core Web API", "Python", "Java", "SQL", "Entity Framework"],
   },
   {
-    title: "Frameworks & Technologies",
+    title: "Frontend & Web",
     icon: Wrench,
-    skills: [".NET 8", "ASP.NET", "HTML", "CSS", "SDLC"],
+    skills: ["JavaScript (ES6+)", "HTML5", "CSS3", "Bootstrap", "Responsive UI Design", "RESTful Services"],
   },
   {
-    title: "Tools",
+    title: "Databases & Tools",
     icon: Database,
-    skills: ["Visual Studio 2022", "Git", "SQL Server Management Studio", "Cozyroc"],
+    skills: ["SQL Server", "SSMS", "MySQL", "Firebase", "Git", "GitHub", "Visual Studio 2022", "Cozyroc"],
   },
   {
-    title: "Databases",
-    icon: Database,
-    skills: ["SQL Server", "MySQL"],
+    title: "Engineering Practices",
+    icon: GitBranch,
+    skills: ["Function Point Analysis", "Software Testing & QA", "Data Migration", "CI/CD Baselines"],
   },
 ];
 
 const coreCompetencies = [
-  "Data Integration",
-  "Software Testing",
-  "Problem-Solving",
-  "Time Management",
-  "Documentation Accuracy",
-  "Analytical Thinking",
+  "Agile Methodologies",
+  "RESTful API Architecture",
+  "ETL Data Integration",
+  "Function Point Analysis",
+  "Software Testing & QA",
+  "Git Workflows",
 ];
 
 const SkillsSection = () => {

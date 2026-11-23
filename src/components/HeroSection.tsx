@@ -1,5 +1,6 @@
 import { ArrowDown, Download, Briefcase, Code, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import resumeAsset from "@/assets/putera-m-danial-resume.pdf.asset.json";
 
 const HeroSection = () => {
   const scrollToSection = (id: string) => {
@@ -12,8 +13,8 @@ const HeroSection = () => {
   };
 
   const stats = [
-    { icon: Briefcase, value: "1+", label: "Year Experience" },
-    { icon: Code, value: "3+", label: "Projects Built" },
+    { icon: Briefcase, value: ".NET 8", label: "Enterprise Development" },
+    { icon: Code, value: "2", label: "Featured Projects" },
     { icon: Award, value: "95%", label: "Error Reduction" },
   ];
 
@@ -38,13 +39,13 @@ const HeroSection = () => {
         </h1>
         
         <p className="text-xl md:text-2xl text-primary font-semibold mb-4">
-          Software Developer | C# & .NET Specialist
+          Software Engineer | .NET & Full-Stack Web Developer
         </p>
 
         {/* Value Proposition */}
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
-          I build <span className="text-foreground font-medium">reliable software solutions</span> that reduce errors by 95%. 
-          Currently developing enterprise applications at Jabatan Perkhidmatan Awam.
+          I build <span className="text-foreground font-medium">clean, reliable, and scalable software</span> with C#, .NET 8,
+          ASP.NET Core, and SQL Server—from RESTful APIs and data integration pipelines to high-performing web interfaces.
         </p>
 
         {/* Stats */}
@@ -68,7 +69,7 @@ const HeroSection = () => {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" asChild>
-            <a href="/resume.pdf" download>
+            <a href={resumeAsset.url} download="Putera_M_Danial_Resume.pdf">
               <Download className="h-4 w-4 mr-2" />
               Download Resume
             </a>

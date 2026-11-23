@@ -16,16 +16,16 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Putera M. Danial | Software Developer - C# & .NET Specialist</title>
+        <title>Putera M. Danial | Software Engineer | .NET & Full-Stack Web Developer</title>
         <meta 
           name="description" 
-          content="Software Developer specializing in C#, .NET, and SQL Server. Reduced document processing errors by 95%. View my portfolio, projects, and download my resume." 
+          content="Software Engineer specializing in C#, .NET 8, ASP.NET Core, SQL Server, RESTful APIs, and full-stack web development. View projects and download my resume."
         />
-        <meta name="keywords" content="Putera M. Danial, software developer, C#, .NET developer, SQL Server, web developer, Malaysia, hire developer" />
-        <meta property="og:title" content="Putera M. Danial | Software Developer - C# & .NET Specialist" />
-        <meta property="og:description" content="Software Developer who builds reliable systems. Reduced errors by 95%. View portfolio and download resume." />
+        <meta name="keywords" content="Putera M. Danial, software engineer, C#, .NET 8, ASP.NET Core, SQL Server, RESTful API, full-stack web developer, Malaysia" />
+        <meta property="og:title" content="Putera M. Danial | Software Engineer | .NET & Full-Stack Web Developer" />
+        <meta property="og:description" content="Software Engineer building reliable enterprise solutions, RESTful APIs, data integration pipelines, and high-performing web experiences." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://puteramdanial.com" />
+        <link rel="canonical" href="https://puteramduniverse.lovable.app" />
       </Helmet>
       
       <div className="min-h-screen bg-background">
